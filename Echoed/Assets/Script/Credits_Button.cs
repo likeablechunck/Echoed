@@ -2,12 +2,10 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class Start_Button : MonoBehaviour
-{
+public class Credits_Button : MonoBehaviour {
 
     public void onClick()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Credits");
     }
-
 }
