@@ -8,7 +8,7 @@ public class Credits : MonoBehaviour
     public AudioClip typingSound;
     bool typedBefore;
     public bool isItReady;
-    string myString = " -Raquel Flores\n\tCharacter Modeler\n\n-Faranak Razavi\n\tGame Designer/Developer\n\n-Bryce Cheung\n\tAudio Designer\n\n-Henry Ku\n\tCharacter Modeler";
+    string myString = " -Raquel Flores\n\tCharacter Modeler\n\n-Faranak Razavi\n\tGame Designer/Developer\n\n-Bryce Cheung\n\tAudio Engineer\n\n-Henry Kuh\n\tCharacter Modeler";
     public GameObject button1;
     public GameObject button2;
     bool characterIsNull;
