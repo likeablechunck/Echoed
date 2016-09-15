@@ -16,13 +16,13 @@ public class Player_Movement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.UpArrow))
         {
-            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Up"), "time", 3, "easetype", iTween.EaseType.easeInOutSine));
+            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Up"), "time", 1, "easetype", iTween.EaseType.easeInOutSine));
             //iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Up"), "time", 3));
 
         }
         if(Input.GetKey(KeyCode.DownArrow))
         {
-            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Down"), "time", 3, "easetype", iTween.EaseType.easeInOutSine));
+            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Down"), "time", 1, "easetype", iTween.EaseType.easeInOutSine));
         }
 	
 
