@@ -45,7 +45,7 @@ public class Tutorial_Control : MonoBehaviour
 
         if ((timeElapsed - timeElapsedInSecs) > 1.0f)
         {
-            print("Time elapsed is: " + timeElapsed);
+            //print("Time elapsed is: " + timeElapsed);
             string objectToInstantiateName = (string)whatToInstantiate[timeElapsedInSecs];
             GameObject objectToInstantiate = GameObject.Find(objectToInstantiateName);
             if (objectToInstantiate != null)
@@ -59,7 +59,7 @@ public class Tutorial_Control : MonoBehaviour
             }
             timeElapsedInSecs++;
             print("signal that was just instantiated was :" + tempObj);
-            print("Time elapsed is: " + timeElapsedInSecs);
+            //print("Time elapsed is: " + timeElapsedInSecs);
         }
     }
 }

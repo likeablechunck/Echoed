@@ -1,38 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BG_Scrolling : MonoBehaviour {
-
-    public float speed;
+public class BG_Scrolling : MonoBehaviour
+{
     public float x_boarder;
-    public float x_initial_position;
+    public Vector3 initial_position;
+    public float timeStart;
+    public float betweenTwoTutorial;
+    public float endOfTime;
+
 
     // Use this for initialization
     void Start()
     {
-        x_boarder = -4f;
-        x_initial_position = 0f;
-        this.transform.position = new Vector3(x_initial_position, 0, 0);
-
+        initial_position = new Vector3(0,0,50);
+        this.transform.position = initial_position;
     }
 
     // Update is called once per frame
     void Update()
     {
         GameObject player = GameObject.Find("Player");
+        Tutorial_Control TC = Camera.main.GetComponent<Tutorial_Control>();
+        print("Time elapsed: + " + TC.timeElapsed);
+
         if (player != null)
         {
-            this.transform.Translate(speed * -Time.deltaTime, 0, 0);
-            print("Background is at: " + transform.position);
-            // If past a certain point on X
-            if (this.transform.position.x <= x_boarder)
+            if (TC.timeElapsed > timeStart && TC.timeElapsed <= betweenTwoTutorial)
             {
-                print("Background passed the boundries");
-                // Jump far to the right
-                //distance between the boundry and the initial point(in X)
-                this.transform.Translate(-(this.transform.position.x - x_initial_position), 0, 0);
+                screen_mover(2.93f);
             }
+            if (TC.timeElapsed > betweenTwoTutorial && TC.timeElapsed < endOfTime)
+            {
+                screen_mover(3.2f);
+            }
+
         }
     }
+    public void screen_mover(float speed)
+    {
+        print("Speed is : " + speed);
+        this.transform.Translate(speed * -Time.deltaTime, 0, 0);
+        if (this.transform.position.x <= x_boarder)
+        {
+            this.transform.Translate(-(this.transform.position.x - initial_position.x), 0, 0);
+        }
 
+    }
 }
+
