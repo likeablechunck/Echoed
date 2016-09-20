@@ -8,9 +8,9 @@ public class Credits : MonoBehaviour
     public AudioClip typingSound;
     bool typedBefore;
     public bool isItReady;
-    string myString = " -Raquel Flores\n\tCharacter Modeler\n\n-Faranak Razavi\n\tGame Designer/Developer\n\n-Bryce Cheung\n\tAudio Engineer\n\n-Henry Kuh\n\tCharacter Modeler";
-    public GameObject button1;
-    public GameObject button2;
+    string myString = "\t-Raquel Flores\n\t-Bryce Cheung\n\t-Henry Kuh\n\t-Faranak Razavi";
+    public GameObject button;
+    //public GameObject button2;
     bool characterIsNull;
     // Use this for initialization
     void Start()
@@ -61,8 +61,8 @@ public class Credits : MonoBehaviour
         if (isItReady)
         {
 
-            button1.SetActive(true);
-            button2.SetActive(true);
+            button.SetActive(true);
+            //button2.SetActive(true);
 
         }
     }
