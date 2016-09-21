@@ -36,6 +36,10 @@ public class BG_Scrolling : MonoBehaviour
             }
 
         }
+        else
+        {
+            //What to do when player dies!!!
+        }
     }
     public void screen_mover(float speed)
     {

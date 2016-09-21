@@ -12,25 +12,57 @@ public class Tutorial_Control : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        numberOfLoops = 3;
+        numberOfLoops = 1;
         timeElapsedInSecs = 0;
         timeElapsed = 0;
 
         //this will be the order of signals that will appear on screen
         //empty empty fill fill arrow
         //This will repeat for 30secs
-        for (int i = 0; i < 10 * numberOfLoops; i = i + 10)
+        for (int i = 0; i < 42 * numberOfLoops; i = i + 42)
         {
-            whatToInstantiate.Add("Signals/Empty_Circle");
-            whatToInstantiate.Add("Signals/Empty_Circle");
-            whatToInstantiate.Add("Signals/Filled_Circle");
-            whatToInstantiate.Add("Signals/Filled_Circle");
-            whatToInstantiate.Add("Signals/Up_Arrow");
-            whatToInstantiate.Add("Signals/Empty_Circle");
-            whatToInstantiate.Add("Signals/Empty_Circle");
-            whatToInstantiate.Add("Signals/Filled_Circle");
-            whatToInstantiate.Add("Signals/Filled_Circle");
-            whatToInstantiate.Add("Signals/Down_Arrow");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Up_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Down_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Up_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Up_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Down_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Down_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Down_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Up_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Up_Arrow2");
+            whatToInstantiate.Add("Signals/Empty_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Filled_Circle2");
+            whatToInstantiate.Add("Signals/Down_Arrow2");
         }
         print("array has " + whatToInstantiate.Count + "elements");
         print("elements : " + whatToInstantiate);
