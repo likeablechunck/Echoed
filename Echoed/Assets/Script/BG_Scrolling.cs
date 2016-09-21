@@ -22,7 +22,7 @@ public class BG_Scrolling : MonoBehaviour
     {
         GameObject player = GameObject.Find("Player");
         Tutorial_Control TC = Camera.main.GetComponent<Tutorial_Control>();
-        print("Time elapsed: + " + TC.timeElapsed);
+        //print("Time elapsed: + " + TC.timeElapsed);
 
         if (player != null)
         {

@@ -15,18 +15,22 @@ public class Tutorial_Control : MonoBehaviour
         numberOfLoops = 3;
         timeElapsedInSecs = 0;
         timeElapsed = 0;
+
+        //this will be the order of signals that will appear on screen
+        //empty empty fill fill arrow
+        //This will repeat for 30secs
         for (int i = 0; i < 10 * numberOfLoops; i = i + 10)
         {
-            whatToInstantiate.Add("Resources/Prefab/Empty_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Empty_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Filled_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Filled_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Up_Arrow");
-            whatToInstantiate.Add("Resources/Prefab/Empty_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Empty_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Filled_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Filled_Circle");
-            whatToInstantiate.Add("Resources/Prefab/Down_Arrow");
+            whatToInstantiate.Add("Signals/Empty_Circle");
+            whatToInstantiate.Add("Signals/Empty_Circle");
+            whatToInstantiate.Add("Signals/Filled_Circle");
+            whatToInstantiate.Add("Signals/Filled_Circle");
+            whatToInstantiate.Add("Signals/Up_Arrow");
+            whatToInstantiate.Add("Signals/Empty_Circle");
+            whatToInstantiate.Add("Signals/Empty_Circle");
+            whatToInstantiate.Add("Signals/Filled_Circle");
+            whatToInstantiate.Add("Signals/Filled_Circle");
+            whatToInstantiate.Add("Signals/Down_Arrow");
         }
         print("array has " + whatToInstantiate.Count + "elements");
         print("elements : " + whatToInstantiate);
@@ -39,18 +43,15 @@ public class Tutorial_Control : MonoBehaviour
     {
         
         timeElapsed = timeElapsed + Time.deltaTime;
-        //this will be the order of signals that will appear on screen
-        //empty empty fill fill arrow
-        //This will repeat for 30secs
 
         if ((timeElapsed - timeElapsedInSecs) > 1.0f)
         {
             //print("Time elapsed is: " + timeElapsed);
             string objectToInstantiateName = (string)whatToInstantiate[timeElapsedInSecs];
-            GameObject objectToInstantiate = GameObject.Find(objectToInstantiateName);
-            if (objectToInstantiate != null)
+            Object testObj = Resources.Load(objectToInstantiateName);
+            if (testObj != null)
             {
-                tempObj = (Instantiate(objectToInstantiate,
+                tempObj = (Instantiate(testObj,
                     new Vector2(11, -4.2f),
                     Quaternion.identity)) as GameObject;
             } else
@@ -59,7 +60,6 @@ public class Tutorial_Control : MonoBehaviour
             }
             timeElapsedInSecs++;
             print("signal that was just instantiated was :" + tempObj);
-            //print("Time elapsed is: " + timeElapsedInSecs);
         }
     }
 }
