@@ -13,7 +13,7 @@ public class BG_Scrolling : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        initial_position = new Vector3(0,0,50);
+        initial_position = new Vector3(84,0,50);
         this.transform.position = initial_position;
     }
 
