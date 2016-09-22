@@ -28,11 +28,11 @@ public class Signal_Movement : MonoBehaviour
             if (transform.position.x <= startgPosition.x  &&
             transform.position.x >= endPosition.x )
             {
-                if (TC.timeElapsed > timeStart && TC.timeElapsed <= betweenTwoTutorial)
+                if (TC.timeElapsedInSecs > timeStart && TC.timeElapsedInSecs <= betweenTwoTutorial)
                 {
                     signal_mover(2.93f);
                 }
-                if (TC.timeElapsed > betweenTwoTutorial && TC.timeElapsed < endOfTime)
+                if (TC.timeElapsedInSecs > betweenTwoTutorial && TC.timeElapsedInSecs < endOfTime)
                 {
                     signal_mover(3.2f);
                 }

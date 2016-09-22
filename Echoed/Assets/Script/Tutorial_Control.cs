@@ -5,7 +5,7 @@ public class Tutorial_Control : MonoBehaviour
 {
     public ArrayList whatToInstantiate = new ArrayList();
     public int numberOfLoops;
-    int timeElapsedInSecs;
+    public int timeElapsedInSecs;
     GameObject tempObj;
     public float timeElapsed;
 
@@ -19,7 +19,7 @@ public class Tutorial_Control : MonoBehaviour
         //this will be the order of signals that will appear on screen
         //empty empty fill fill arrow
         //This will repeat for 30secs
-        for (int i = 0; i < 42 * numberOfLoops; i = i + 42)
+        for (int i = 1; i < 42 * numberOfLoops; i = i + 42)
         {
             whatToInstantiate.Add("Signals/Empty_Circle2");
             whatToInstantiate.Add("Signals/Empty_Circle2");

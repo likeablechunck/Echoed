@@ -7,7 +7,7 @@ public class Start_Button : MonoBehaviour
 
     public void onClick()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Tutorial_Page");
     }
 
 }
