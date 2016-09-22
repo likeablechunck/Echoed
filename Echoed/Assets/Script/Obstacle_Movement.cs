@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Signal_Movement : MonoBehaviour
-{
+public class Obstacle_Movement : MonoBehaviour {
+
     public Vector2 startgPosition;
     public Vector2 endPosition;
     float Obstaclespeed;
@@ -11,22 +11,22 @@ public class Signal_Movement : MonoBehaviour
     public float endOfTime;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         transform.position = startgPosition;
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         GameObject player = GameObject.Find("Player");
         Tutorial_Control TC = Camera.main.GetComponent<Tutorial_Control>();
 
-        if(GameObject.Find("Player") != null)
+        if (GameObject.Find("Player") != null)
         {
-            if (transform.position.x <= startgPosition.x  &&
-            transform.position.x >= endPosition.x )
+            if (transform.position.x <= startgPosition.x &&
+            transform.position.x >= endPosition.x)
             {
                 if (TC.timeElapsedInSecs > timeStart && TC.timeElapsedInSecs <= betweenTwoTutorial)
                 {
@@ -46,9 +46,9 @@ public class Signal_Movement : MonoBehaviour
         else
         {
             //What to do when player dies!!!
-        }    
-	
-	}
+        }
+
+    }
     public void signal_mover(float speed)
     {
         print("Speed is : " + speed);

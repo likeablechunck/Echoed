@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Tutorial_Control : MonoBehaviour
+public class Obstacle_Instantiation : MonoBehaviour
 {
     public ArrayList whatToInstantiate = new ArrayList();
     public int numberOfLoops;
@@ -9,8 +9,8 @@ public class Tutorial_Control : MonoBehaviour
     GameObject tempObj;
     public float timeElapsed;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         numberOfLoops = 1;
         timeElapsedInSecs = 0;
@@ -26,54 +26,54 @@ public class Tutorial_Control : MonoBehaviour
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Up_Arrow2");
+            whatToInstantiate.Add("Obstacles/Down_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Down_Arrow2");
+            whatToInstantiate.Add("Obstacles/Top_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Up_Arrow2");
+            whatToInstantiate.Add("Obstacles/Down_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Up_Arrow2");
+            whatToInstantiate.Add("Obstacles/Down_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Down_Arrow2");
+            whatToInstantiate.Add("Obstacles/Top_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Down_Arrow2");
+            whatToInstantiate.Add("Obstacles/Top_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Down_Arrow2");
+            whatToInstantiate.Add("Obstacles/Top_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Up_Arrow2");
+            whatToInstantiate.Add("Obstacles/Down_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Up_Arrow2");
+            whatToInstantiate.Add("Obstacles/Down_Obstacle");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
             whatToInstantiate.Add("Obstacles/Obstacle_None");
-            whatToInstantiate.Add("Obstacles/Down_Arrow2");
+            whatToInstantiate.Add("Obstacles/Top_Obstacle");
         }
         print("array has " + whatToInstantiate.Count + "elements");
         print("elements : " + whatToInstantiate);
 
     }
 
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-        
+
         timeElapsed = timeElapsed + Time.deltaTime;
 
         if ((timeElapsed - timeElapsedInSecs) > 1.0f)
@@ -86,7 +86,8 @@ public class Tutorial_Control : MonoBehaviour
                 tempObj = (Instantiate(testObj,
                     new Vector2(11, -4.2f),
                     Quaternion.identity)) as GameObject;
-            } else
+            }
+            else
             {
                 print("you wanted me to instantiate an object named " + objectToInstantiateName + " but i did not find it");
             }
