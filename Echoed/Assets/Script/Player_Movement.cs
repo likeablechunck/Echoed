@@ -4,10 +4,11 @@ using System.Collections;
 public class Player_Movement : MonoBehaviour
 {
 
+    public Vector2 playerInitialPosition;
 	// Use this for initialization
 	void Start ()
     {
-        
+        transform.position = playerInitialPosition; 
 	
 	}
 	
@@ -27,4 +28,12 @@ public class Player_Movement : MonoBehaviour
 	
 
 	}
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Obstacle")
+        {
+            print("I collided with : " + col.name);
+        }
+    }
 }
