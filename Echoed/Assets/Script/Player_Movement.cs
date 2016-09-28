@@ -33,6 +33,7 @@ public class Player_Movement : MonoBehaviour
     {
         if(col.gameObject.tag == "Obstacle")
         {
+            //It needs to display the lose scene and returns to the tutorial
             print("I collided with : " + col.name);
         }
     }

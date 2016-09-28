@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Obstacle_Instantiation : MonoBehaviour
 {
@@ -75,26 +76,36 @@ public class Obstacle_Instantiation : MonoBehaviour
     {
 
         timeElapsed = timeElapsed + Time.deltaTime;
+        GameObject player = GameObject.Find("Player");
 
-        if ((timeElapsed - timeElapsedInSecs) > 1.0f)
+        if(player !=null)
         {
-            //print("Time elapsed is: " + timeElapsed);
-            string objectToInstantiateName = (string)whatToInstantiate[timeElapsedInSecs];
-            Object testObj = Resources.Load(objectToInstantiateName);
-            if (testObj != null)
+            if ((timeElapsed - timeElapsedInSecs) > 1.0f)
             {
-                tempObj = (Instantiate(testObj,
-                    new Vector2(11, -4.2f),
-                    Quaternion.identity)) as GameObject;
+                //print("Time elapsed is: " + timeElapsed);
+                string objectToInstantiateName = (string)whatToInstantiate[timeElapsedInSecs];
+                Object testObj = Resources.Load(objectToInstantiateName);
+                if (testObj != null)
+                {
+                    tempObj = (Instantiate(testObj,
+                        new Vector2(11, -4.2f),
+                        Quaternion.identity)) as GameObject;
+                }
+                else
+                {
+                    print("you wanted me to instantiate an object named " + objectToInstantiateName + " but i did not find it");
+                }
+                timeElapsedInSecs++;
+                //print("Time in secs is " + timeElapsedInSecs);
+                //print("Time elapsed is " + timeElapsed);
+                print("signal that was just instantiated was :" + tempObj);
             }
-            else
-            {
-                print("you wanted me to instantiate an object named " + objectToInstantiateName + " but i did not find it");
-            }
-            timeElapsedInSecs++;
-            print("Time in secs is " + timeElapsedInSecs);
-            print("Time elapsed is " + timeElapsed);
-            print("signal that was just instantiated was :" + tempObj);
         }
+        else
+        {
+            SceneManager.LoadScene("Tutorial_Page");
+        }
+
+        
     }
 }

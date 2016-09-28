@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Signal_Movement : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class Signal_Movement : MonoBehaviour
         else
         {
             //What to do when player dies!!!
+            SceneManager.LoadScene("Tutorial_Page");
         }    
 	
 	}
