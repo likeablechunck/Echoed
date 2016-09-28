@@ -28,14 +28,15 @@ public class Obstacle_Movement : MonoBehaviour {
             if (transform.position.x <= startgPosition.x &&
             transform.position.x >= endPosition.x)
             {
-                if (TC.timeElapsedInSecs > timeStart && TC.timeElapsedInSecs <= betweenTwoTutorial)
-                {
-                    signal_mover(2.93f);
-                }
-                if (TC.timeElapsedInSecs > betweenTwoTutorial && TC.timeElapsedInSecs < endOfTime)
-                {
-                    signal_mover(3.2f);
-                }
+                signal_mover(1);
+                //if (TC.timeElapsed > timeStart && TC.timeElapsed <= betweenTwoTutorial)
+                //{
+                //    signal_mover(2.93f);
+                //}
+                //if (TC.timeElapsed > betweenTwoTutorial && TC.timeElapsed < endOfTime)
+                //{
+                //    signal_mover(3.2f);
+                //}
 
             }
             else
@@ -46,6 +47,9 @@ public class Obstacle_Movement : MonoBehaviour {
         else
         {
             //What to do when player dies!!!
+            //stop the movements
+            signal_mover(0);
+            
         }
 
     }
@@ -55,4 +59,5 @@ public class Obstacle_Movement : MonoBehaviour {
         this.transform.Translate(speed * -Time.deltaTime, 0, 0);
 
     }
+
 }
