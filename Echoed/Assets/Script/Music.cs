@@ -11,6 +11,8 @@ public class Music : MonoBehaviour
     public AudioClip tutorialPartAClip;
     public AudioClip tutorialPartBClip;
     //public AudioClip gamePlayClip;
+    public AudioClip flyingClip;
+    public AudioClip smashingClip;
 
     // Use this for initialization
     void Start ()
@@ -43,6 +45,14 @@ public class Music : MonoBehaviour
         //{
         //    gamePlay();
         //}
+        if ( state == "flying")
+        {
+            flying();
+        }
+        if ( state == "smashed")
+        {
+            smashed();
+        }
     }
 
     public void changeState(string stateName)
@@ -95,6 +105,22 @@ public class Music : MonoBehaviour
             audioSource.clip = tutorialPartBClip;
         }
     }
+    public void flying()
+    {
+        if (audioSource.clip == flyingClip)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+
+            }
+        }
+        else
+        {
+            audioSource.clip = flyingClip;
+        }
+    }
+    
     //public void gamePlay()
     //{
     //    if (audioSource.clip == gamePlayClip)
@@ -136,6 +162,33 @@ public class Music : MonoBehaviour
         else
         {
             audioSource.clip = buttonClip ;
+        }
+    }
+    public void smashed()
+    {
+        if (audioSource.clip == smashingClip)
+        {
+            if (audioSource.isPlaying)
+            {
+                playedOnce = true;
+            }
+            else
+            {
+                if (!playedOnce)
+                {
+                    audioSource.Play();
+                }
+                else
+                {
+                    playedOnce = false;
+                    //changeState("normal");
+
+                }
+            }
+        }
+        else
+        {
+            audioSource.clip = smashingClip;
         }
 
     }
