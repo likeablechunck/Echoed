@@ -12,12 +12,19 @@ public class Return_Button_Script : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
     public void onClick()
     {
-        SceneManager.LoadScene(0);
+        Music music = Camera.main.GetComponent<Music>();
+        music.changeState("clicked");
+        changeScene();
+    }
+    void changeScene()
+    {
+        StartCoroutine("Delay");
+    }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(.30f);
+        SceneManager.LoadScene("Start_Menu");
     }
 }

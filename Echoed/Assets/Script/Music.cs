@@ -72,6 +72,7 @@ public class Music : MonoBehaviour
                 else
                 {
                     playedOnce = false;
+                    //changeState("normal");
 
                 }
             }
