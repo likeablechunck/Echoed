@@ -29,14 +29,6 @@ public class Obstacle_Movement : MonoBehaviour {
             transform.position.x >= endPosition.x)
             {
                 signal_mover(1);
-                //if (TC.timeElapsed > timeStart && TC.timeElapsed <= betweenTwoTutorial)
-                //{
-                //    signal_mover(2.93f);
-                //}
-                //if (TC.timeElapsed > betweenTwoTutorial && TC.timeElapsed < endOfTime)
-                //{
-                //    signal_mover(3.2f);
-                //}
 
             }
             else

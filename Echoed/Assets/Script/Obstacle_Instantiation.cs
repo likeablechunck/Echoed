@@ -102,7 +102,7 @@ public class Obstacle_Instantiation : MonoBehaviour
         {
             if (timeElapsed >= 0 && timeElapsed < 34)
             {
-                if ((timeElapsed - timeElapsedInSecs) > 1.31f)
+                if ((timeElapsed - timeElapsedInSecs) > 1.304f)
                 {
                     string objectToInstantiateName = (string)whatToInstantiateFirst[firstArrayIndex];
                     Object testObj = Resources.Load(objectToInstantiateName);
@@ -116,7 +116,7 @@ public class Obstacle_Instantiation : MonoBehaviour
                     {
                         print("you wanted me to instantiate an object named " + objectToInstantiateName + " but i did not find it");
                     }
-                    timeElapsedInSecs += 1.31f;
+                    timeElapsedInSecs += 1.304f;
                     firstArrayIndex++;
                     print("Obstacle that was just instantiated was :" + tempObj);
                 }
