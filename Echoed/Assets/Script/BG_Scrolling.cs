@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BG_Scrolling : MonoBehaviour
 {
@@ -28,17 +29,22 @@ public class BG_Scrolling : MonoBehaviour
         {
             if (TC.timeElapsed > timeStart && TC.timeElapsed <= betweenTwoTutorial)
             {
-                screen_mover(2.93f);
+                screen_mover(1);
             }
             if (TC.timeElapsed > betweenTwoTutorial && TC.timeElapsed < endOfTime)
             {
-                screen_mover(3.2f);
+                screen_mover(1);
+            }
+            if(TC.timeElapsed >= endOfTime)
+            {
+                SceneManager.LoadScene("Main");
             }
 
         }
         else
         {
             //What to do when player dies!!!
+            SceneManager.LoadScene("Tutorial_Page");
         }
     }
     public void screen_mover(float speed)

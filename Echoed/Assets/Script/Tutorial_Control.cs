@@ -30,8 +30,8 @@ public class Tutorial_Control : MonoBehaviour
             Music music = Camera.main.GetComponent<Music>();
             if (timeElapsed >= tutorialStart && timeElapsed < tutorialMiddle)
             {
+                StartCoroutine("Delay");
                 
-                music.changeState("tutorialPartA");
             }
             if( timeElapsed >= tutorialMiddle && timeElapsed <= tutorialEnd)
             {
@@ -43,6 +43,13 @@ public class Tutorial_Control : MonoBehaviour
         {
             //When player dies!!
             //go back to the beggining of the tutorial & play the crashing
+            SceneManager.LoadScene("Main");
         }     
+    }
+    IEnumerator Delay()
+    {
+        Music music = Camera.main.GetComponent<Music>();
+        yield return new WaitForSeconds(13f);
+        music.changeState("tutorialPartA");
     }
 }
