@@ -24,67 +24,67 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         //this will be the order of Obstacles that will appear on screen
         for (int i = 1; i < 34; i++)
         {
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Up_Arrow2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            whatToInstantiateFirst.Add("Signals/Down_Arrow2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            whatToInstantiateFirst.Add("Signals/Empty_Circle2");
+            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             whatToInstantiateFirst.Add("Signals/Down_Arrow2");
 
         }
-        for (int j = 1; j < 16; j++)
+        for (int j = 1; j < 4; j++)
         {
-            whatToInstantiateSecond.Add("Signals/Empty_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
             whatToInstantiateSecond.Add("Signals/Down_Arrow2");
-            whatToInstantiateSecond.Add("Signals/Empty_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
             whatToInstantiateSecond.Add("Signals/Up_Arrow2");
-            whatToInstantiateSecond.Add("Signals/Empty_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
             whatToInstantiateSecond.Add("Signals/Up_Arrow2");
-            whatToInstantiateSecond.Add("Signals/Empty_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
             whatToInstantiateSecond.Add("Signals/Down_Arrow2");
         }
         //print("array has " + whatToInstantiateFirst.Count + "elements");
@@ -128,7 +128,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
             }
             if (timeElapsed >= 34 && timeElapsed <= 51.14f)
             {
-                if ((timeElapsed - timeElapsedInSecs) > 1.07f)
+                if ((timeElapsed - timeElapsedInSecs) > (3.21f))
                 {
                     //print("Time elapsed is: " + timeElapsed);
                     string objectToInstantiateSecondName = (string)whatToInstantiateSecond[secondArrayIndex];
@@ -143,7 +143,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
                     {
                         print("you wanted me to instantiate an object named " + objectToInstantiateSecondName + " but i did not find it");
                     }
-                    timeElapsedInSecs += 1.07f;
+                    timeElapsedInSecs += (3.21f);
                     secondArrayIndex++;
                     print("signal that was just instantiated was :" + tempObj);
                 }
