@@ -17,12 +17,12 @@ public class Player_Movement : MonoBehaviour
     {
         PlayerMusic PM = Camera.main.GetComponent<PlayerMusic>();
         PM.changeState("flying");
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Up"), "time", 2.6f, "easetype", iTween.EaseType.linear));
            
         }
-        if(Input.GetKey(KeyCode.DownArrow))
+        if(Input.GetKeyDown(KeyCode.DownArrow))
         {
             iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Down"), "time", 2.6f, "easetype", iTween.EaseType.linear));
         }
@@ -36,10 +36,10 @@ public class Player_Movement : MonoBehaviour
         {
             //It needs to display the lose scene and returns to the tutorial
             print("I collided with : " + col.name);
-            Music music = Camera.main.GetComponent<Music>();
-            music.changeState("smashed");
+            PlayerMusic pm = Camera.main.GetComponent<PlayerMusic>();
+            pm.changeState("smashed");
             //stop the flying music & switch to Smash music
-            Destroy(this.gameObject, 1);
+            Destroy(this.gameObject, 1.5f);
 
         }
     }

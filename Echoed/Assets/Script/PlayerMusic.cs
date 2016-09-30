@@ -39,7 +39,7 @@ public class PlayerMusic : MonoBehaviour
     public void changeState(string stateName)
     {
         state = stateName;
-        print("current Music state is :" + stateName);
+        print("current Music state for the player is :" + stateName);
     }
     public void flying()
     {
