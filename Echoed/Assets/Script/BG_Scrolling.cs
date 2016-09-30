@@ -27,18 +27,20 @@ public class BG_Scrolling : MonoBehaviour
 
         if (player != null)
         {
-            if (TC.timeElapsed > timeStart && TC.timeElapsed <= betweenTwoTutorial)
-            {
-                screen_mover(1);
-            }
-            if (TC.timeElapsed > betweenTwoTutorial && TC.timeElapsed < endOfTime)
-            {
-                screen_mover(1);
-            }
-            if(TC.timeElapsed >= endOfTime)
-            {
-                SceneManager.LoadScene("Main");
-            }
+
+            screen_mover(0.5f);
+            ////if (TC.timeElapsed > timeStart && TC.timeElapsed <= betweenTwoTutorial)
+            ////{
+            ////    screen_mover(1);
+            ////}
+            //if (TC.timeElapsed >= timeStart && TC.timeElapsed < endOfTime)
+            //{
+            //    screen_mover(0.5f);
+            //}
+            //if (TC.timeElapsed >= endOfTime)
+            //{
+            //    SceneManager.LoadScene("Main");
+            //}
 
         }
         else
