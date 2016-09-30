@@ -15,22 +15,22 @@ public class Tutorial_Control : MonoBehaviour
     {
         timeElapsedInSecs = 0;
         timeElapsed = 0;
-     
+        StartCoroutine(PlayPartA());
     }
 	
 	// Update is called once per frame
 	void Update ()
     {       
         timeElapsed = timeElapsed + Time.deltaTime;
-        print("Time elapsed is " + timeElapsed);
+        //print("Time elapsed is " + timeElapsed);
 
         GameObject player = GameObject.Find("Player");
         if (player != null)
         {
-            Music music = Camera.main.GetComponent<Music>();
+            GameMusic music = Camera.main.GetComponent<GameMusic>();
             if (timeElapsed >= tutorialStart && timeElapsed < tutorialMiddle)
             {
-                music.changeState("tutorialPartA");
+                //music.changeState("tutorialPartA");
                 //print("I am about to call DELAY function");
                 //StartCoroutine("Delay");
                 
@@ -48,10 +48,23 @@ public class Tutorial_Control : MonoBehaviour
             SceneManager.LoadScene("Loose_Tutorial");
         }     
     }
-    IEnumerator Delay()
+    public void MusicChanger()
     {
-        yield return new WaitForSeconds(3f);
-        Music music = Camera.main.GetComponent<Music>();
+        GameMusic music = Camera.main.GetComponent<GameMusic>();
         music.changeState("tutorialPartA");
+
+    }
+    IEnumerator PlayPartA()
+    {
+        Debug.Log("10 second wait is about to start");
+        yield return StartCoroutine(Delay(10.0f));
+        Debug.Log("10 second wait is over");
+        GameMusic music = Camera.main.GetComponent<GameMusic>();
+        music.changeState("tutorialPartA");
+    }
+
+    IEnumerator Delay(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }

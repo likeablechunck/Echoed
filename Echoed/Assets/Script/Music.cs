@@ -5,7 +5,12 @@ public class Music : MonoBehaviour
 {
     public string state;
     bool playedOnce;
-    public AudioSource audioSource;
+    //AudioSource1 will take care of main game's musics
+    public AudioSource audioSource1;
+    //AudioSOurce2 takes care of Cave sound
+    public AudioSource audioSource2;
+    //AudioSource3 will take care of Bat's sounds
+    public AudioSource audioSource3;
     public AudioClip buttonClip;
     public AudioClip caveClip;
     public AudioClip tutorialPartAClip;
@@ -58,117 +63,91 @@ public class Music : MonoBehaviour
     public void changeState(string stateName)
     {
         state = stateName;
+        print("current Music state is :" + stateName);
     }
 
     public void normal()
     {
-        if (audioSource.clip == caveClip)
+        if (audioSource2.clip == caveClip)
         {
-            if (!audioSource.isPlaying)
+            if (!audioSource2.isPlaying)
             {
-                audioSource.Play();
+                audioSource2.Play();
 
             }
         }
         else
         {
-            audioSource.clip = caveClip;
+            audioSource2.clip = caveClip;
         }
     }
     public void tutorialPartA()
     {
-        if (audioSource.clip == tutorialPartAClip)
+        if (audioSource1.clip == tutorialPartAClip)
         {
-            if (!audioSource.isPlaying)
+            if (!audioSource1.isPlaying)
             {
-                audioSource.Play();
+                audioSource1.Play();
 
             }
         }
         else
         {
-            audioSource.clip = tutorialPartAClip;
+            audioSource1.clip = tutorialPartAClip;
         }
     }
     public void tutorialPartB()
     {
-        if (audioSource.clip == tutorialPartBClip)
+        if (audioSource1.clip == tutorialPartBClip)
         {
-            if (!audioSource.isPlaying)
+            if (!audioSource1.isPlaying)
             {
-                audioSource.Play();
+                audioSource1.Play();
 
             }
         }
         else
         {
-            audioSource.clip = tutorialPartBClip;
+            audioSource1.clip = tutorialPartBClip;
         }
     }
-    public void flying()
-    {
-        if (audioSource.clip == flyingClip)
-        {
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-
-            }
-        }
-        else
-        {
-            audioSource.clip = flyingClip;
-        }
-    }
-    
     //public void gamePlay()
     //{
-    //    if (audioSource.clip == gamePlayClip)
+    //    if (audioSource1.clip == gamePlayClip)
     //    {
-    //        if (!audioSource.isPlaying)
+    //        if (!audioSource1.isPlaying)
     //        {
-    //            audioSource.Play();
+    //            audioSource1.Play();
 
     //        }
     //    }
     //    else
     //    {
-    //        audioSource.clip = gamePlayClip;
+    //        audioSource1.clip = gamePlayClip;
     //    }
     //}
 
-    public void clicked()
+        //Bat's Movements sounds
+    public void flying()
     {
-        if (audioSource.clip == buttonClip)
+        if (audioSource3.clip == flyingClip)
         {
-            if (audioSource.isPlaying)
+            if (!audioSource3.isPlaying)
             {
-                playedOnce = true;
-            }
-            else
-            {
-                if (!playedOnce)
-                {
-                    audioSource.Play();
-                }
-                else
-                {
-                    playedOnce = false;
-                    //changeState("normal");
+                audioSource3.Play();
 
-                }
             }
         }
         else
         {
-            audioSource.clip = buttonClip ;
+            audioSource3.clip = flyingClip;
         }
     }
     public void smashed()
     {
-        if (audioSource.clip == smashingClip)
+        if (audioSource3.clip == smashingClip)
         {
-            if (audioSource.isPlaying)
+            if (audioSource3.isPlaying)
             {
                 playedOnce = true;
             }
@@ -176,7 +155,7 @@ public class Music : MonoBehaviour
             {
                 if (!playedOnce)
                 {
-                    audioSource.Play();
+                    audioSource3.Play();
                 }
                 else
                 {
@@ -188,8 +167,38 @@ public class Music : MonoBehaviour
         }
         else
         {
-            audioSource.clip = smashingClip;
+            audioSource3.clip = smashingClip;
         }
 
     }
+
+    //Clicking Sound
+
+    public void clicked()
+    {
+        if (audioSource2.clip == buttonClip)
+        {
+            if (audioSource2.isPlaying)
+            {
+                playedOnce = true;
+            }
+            else
+            {
+                if (!playedOnce)
+                {
+                    audioSource2.Play();
+                }
+                else
+                {
+                    playedOnce = false;
+                    //changeState("normal");
+
+                }
+            }
+        }
+        else
+        {
+            audioSource2.clip = buttonClip ;
+        }
+    }    
 }

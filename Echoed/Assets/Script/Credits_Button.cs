@@ -8,7 +8,7 @@ public class Credits_Button : MonoBehaviour
 
     public void onClick()
     {
-        Music music = Camera.main.GetComponent<Music>();
+        BackgroundMusic music = Camera.main.GetComponent<BackgroundMusic>();
         music.changeState("clicked");
         changeScene();
     }

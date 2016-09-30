@@ -15,8 +15,8 @@ public class Player_Movement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        Music music = Camera.main.GetComponent<Music>();
-        music.changeState("flying");
+        PlayerMusic PM = Camera.main.GetComponent<PlayerMusic>();
+        PM.changeState("flying");
         if (Input.GetKey(KeyCode.UpArrow))
         {
             iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Up"), "time", 2.6f, "easetype", iTween.EaseType.linear));

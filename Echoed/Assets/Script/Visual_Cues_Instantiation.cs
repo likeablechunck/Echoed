@@ -97,7 +97,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
     {
 
         timeElapsed = timeElapsed + Time.deltaTime;
-        print("Time elapsed is " + timeElapsed);
+        //print("Time elapsed is " + timeElapsed);
         GameObject player = GameObject.Find("Player");
 
         if (player != null)

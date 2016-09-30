@@ -49,7 +49,7 @@ public class BG_Scrolling : MonoBehaviour
     }
     public void screen_mover(float speed)
     {
-        print("Speed is : " + speed);
+        //print("Speed is : " + speed);
         this.transform.Translate(speed * -Time.deltaTime, 0, 0);
         if (this.transform.position.x <= x_boarder)
         {

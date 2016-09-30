@@ -47,7 +47,7 @@ public class Obstacle_Movement : MonoBehaviour {
     }
     public void signal_mover(float speed)
     {
-        print("Speed is : " + speed);
+        //print("Speed is : " + speed);
         this.transform.Translate(speed * -Time.deltaTime, 0, 0);
 
     }

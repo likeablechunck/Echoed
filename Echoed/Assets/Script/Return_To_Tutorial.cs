@@ -16,7 +16,7 @@ public class Return_To_Tutorial : MonoBehaviour {
 	}
     public void onClick()
     {
-        Music music = Camera.main.GetComponent<Music>();
+        BackgroundMusic music = Camera.main.GetComponent<BackgroundMusic>();
         music.changeState("clicked");
         changeScene();
     }
