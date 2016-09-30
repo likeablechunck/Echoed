@@ -19,12 +19,12 @@ public class Player_Movement : MonoBehaviour
         music.changeState("flying");
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Up"), "time", 1.5f, "easetype", iTween.EaseType.linear));
+            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Up"), "time", 2.6f, "easetype", iTween.EaseType.linear));
            
         }
         if(Input.GetKey(KeyCode.DownArrow))
         {
-            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Down"), "time", 1.5f, "easetype", iTween.EaseType.easeInOutSine));
+            iTween.MoveTo(gameObject, iTween.Hash("path", iTweenPath.GetPath("Down"), "time", 2.6f, "easetype", iTween.EaseType.linear));
         }
 	
 
