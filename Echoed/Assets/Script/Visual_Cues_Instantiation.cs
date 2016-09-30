@@ -156,7 +156,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         }
         else
         {
-            SceneManager.LoadScene("Tutorial_Page");
+            SceneManager.LoadScene("Loose_Tutorial");
         }
     }
 }

@@ -23,11 +23,11 @@ public class Tutorial_Texts : MonoBehaviour
 
         if(player != null)
         {
-            if (TC.timeElapsedInSecs >= activeTime)
+            if (TC.timeElapsed >= activeTime)
             {
                 textImage.enabled = true;
             }
-            if(TC.timeElapsedInSecs >= deadTime)
+            if(TC.timeElapsed >= deadTime)
             {
                 textImage.enabled = false;              
             }

@@ -41,7 +41,7 @@ public class Signal_Movement : MonoBehaviour
         {
             //What to do when player dies!!!
             signal_mover(0);
-            SceneManager.LoadScene("Tutorial_Page");
+            SceneManager.LoadScene("Loose_Tutorial");
         }    
 	
 	}

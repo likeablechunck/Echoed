@@ -1,0 +1,32 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+
+public class Return_To_Tutorial : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update ()
+    {
+	
+	}
+    public void onClick()
+    {
+        Music music = Camera.main.GetComponent<Music>();
+        music.changeState("clicked");
+        changeScene();
+    }
+    void changeScene()
+    {
+        StartCoroutine("Delay");
+    }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(.30f);
+        SceneManager.LoadScene("Tutorial_Page");
+    }
+}
