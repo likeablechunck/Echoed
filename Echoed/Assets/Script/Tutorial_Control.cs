@@ -32,9 +32,6 @@ public class Tutorial_Control : MonoBehaviour
             GameMusic music = Camera.main.GetComponent<GameMusic>();
             if (timeElapsed >= tutorialStart && timeElapsed < tutorialMiddle)
             {
-                //music.changeState("tutorialPartA");
-                //print("I am about to call DELAY function");
-                //StartCoroutine("Delay");
                 
             }
             if( timeElapsed >= tutorialMiddle && timeElapsed <= tutorialEnd)

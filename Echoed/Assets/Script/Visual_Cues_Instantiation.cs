@@ -20,11 +20,12 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         timeElapsed = 0;
         firstArrayIndex = 0;
         secondArrayIndex = 0;
+        StartCoroutine(Delay(5.608f));
 
         //this will be the order of Obstacles that will appear on screen
         for (int i = 1; i < 10; i++)
         {
-            whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
             //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
@@ -104,7 +105,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         {
             if (timeElapsed >= 0 && timeElapsed < 34)
             {
-                if ((timeElapsed - timeElapsedInSecs) > (1.304-0.3)*3f)
+                if ((timeElapsed - timeElapsedInSecs) > 5.216f)
                 {
                     //print("Time elapsed is: " + timeElapsed);
                     string objectToInstantiateName = (string)whatToInstantiateFirst[firstArrayIndex];
@@ -120,7 +121,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
                     {
                         print("you wanted me to instantiate an object named " + objectToInstantiateName + " but i did not find it");
                     }
-                    timeElapsedInSecs += (1.304f-0.3f)*3;
+                    timeElapsedInSecs += 5.216f;
                     firstArrayIndex++;
                     print("signal that was just instantiated was :" + tempObj);
                 }
@@ -128,7 +129,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
             }
             if (timeElapsed >= 34 && timeElapsed <= 51.14f)
             {
-                if ((timeElapsed - timeElapsedInSecs) > (3.21f-0.2f))
+                if ((timeElapsed - timeElapsedInSecs) > 4.28f)
                 {
                     //print("Time elapsed is: " + timeElapsed);
                     string objectToInstantiateSecondName = (string)whatToInstantiateSecond[secondArrayIndex];
@@ -143,7 +144,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
                     {
                         print("you wanted me to instantiate an object named " + objectToInstantiateSecondName + " but i did not find it");
                     }
-                    timeElapsedInSecs += (3.21f-0.2f);
+                    timeElapsedInSecs += 4.28f;
                     secondArrayIndex++;
                     print("signal that was just instantiated was :" + tempObj);
                 }
@@ -158,5 +159,16 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         {
             SceneManager.LoadScene("Loose_Tutorial");
         }
+    }
+    //IEnumerator PartAInstantiation()
+    //{
+    //    Debug.Log("2.608 second wait is about to start");
+    //    yield return StartCoroutine(Delay(3.608f));
+        
+    //}
+
+    IEnumerator Delay(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }
