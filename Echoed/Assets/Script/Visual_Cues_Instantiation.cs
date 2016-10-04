@@ -16,11 +16,11 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        timeElapsedInSecs = 0;
+        timeElapsedInSecs = -0.3f;
         timeElapsed = 0;
         firstArrayIndex = 0;
         secondArrayIndex = 0;
-        StartCoroutine(Delay(5.608f));
+        //StartCoroutine(Delay(5.608f));
 
         //this will be the order of Obstacles that will appear on screen
         for (int i = 1; i < 10; i++)
@@ -105,7 +105,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         {
             if (timeElapsed >= 0 && timeElapsed < 34)
             {
-                if ((timeElapsed - timeElapsedInSecs) > 5.216f)
+                if ((timeElapsed - timeElapsedInSecs) > 7.824f)
                 {
                     //print("Time elapsed is: " + timeElapsed);
                     string objectToInstantiateName = (string)whatToInstantiateFirst[firstArrayIndex];
@@ -167,8 +167,8 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         
     //}
 
-    IEnumerator Delay(float seconds)
-    {
-        yield return new WaitForSeconds(seconds);
-    }
+    //IEnumerator Delay(float seconds)
+    //{
+    //    yield return new WaitForSeconds(seconds);
+    //}
 }
