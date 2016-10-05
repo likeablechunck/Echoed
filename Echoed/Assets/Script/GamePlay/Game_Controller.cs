@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Game_Controller : MonoBehaviour
 {
@@ -23,13 +24,11 @@ public class Game_Controller : MonoBehaviour
             {
                 music.changeState("gamePlay");
                 gamePlayPlayed = true;
-            }
-            
+            }          
         }
         else
         {
-
+            SceneManager.LoadScene("GameOver");
         }
-
     }
 }
