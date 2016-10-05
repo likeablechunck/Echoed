@@ -1,0 +1,33 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+
+public class Win_ReturnButton : MonoBehaviour
+{
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    public void onClick()
+    {
+        BackgroundMusic music = Camera.main.GetComponent<BackgroundMusic>();
+        music.changeState("clicked");
+        changeScene();
+    }
+    void changeScene()
+    {
+        StartCoroutine("Delay");
+    }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(.2f);
+        SceneManager.LoadScene("Start_Menu");
+    }
+}
