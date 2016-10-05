@@ -29,8 +29,8 @@ public class Tutorial_Control : MonoBehaviour
         GameObject player = GameObject.Find("Player");
         if (player != null)
         {
-            PlayerMusic PM = Camera.main.GetComponent<PlayerMusic>();
-            PM.changeState("flying");
+            //PlayerMusic PM = Camera.main.GetComponent<PlayerMusic>();
+            //PM.changeState("flying");
             GameMusic music = Camera.main.GetComponent<GameMusic>();
             if (timeElapsed >= tutorialStart && timeElapsed < tutorialMiddle)
             {
@@ -38,7 +38,6 @@ public class Tutorial_Control : MonoBehaviour
             }
             if( timeElapsed >= tutorialMiddle && timeElapsed <= tutorialEnd)
             {
-                //music.changeState("tutorialPartB");
                 if (changedToPartB == false)
                 {
                     music.changeState("tutorialPartB");

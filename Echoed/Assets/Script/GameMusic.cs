@@ -8,7 +8,7 @@ public class GameMusic : MonoBehaviour
     public AudioSource audioSource1;
     public AudioClip tutorialPartAClip;
     public AudioClip tutorialPartBClip;
-    //public AudioClip gamePlayClip;
+    public AudioClip gamePlayClip;
 
     // Use this for initialization
     void Start ()
@@ -29,10 +29,10 @@ public class GameMusic : MonoBehaviour
         {
             tutorialPartB();
         }
-        //if( state == "gamePlay")
-        //{
-        //    gamePlay();
-        //}
+        if (state == "gamePlay")
+        {
+            gamePlay();
+        }
 
     }
     public void changeState(string stateName)
@@ -70,19 +70,19 @@ public class GameMusic : MonoBehaviour
             audioSource1.clip = tutorialPartBClip;
         }
     }
-    //public void gamePlay()
-    //{
-    //    if (audioSource1.clip == gamePlayClip)
-    //    {
-    //        if (!audioSource1.isPlaying)
-    //        {
-    //            audioSource1.Play();
+    public void gamePlay()
+    {
+        if (audioSource1.clip == gamePlayClip)
+        {
+            if (!audioSource1.isPlaying)
+            {
+                audioSource1.Play();
 
-    //        }
-    //    }
-    //    else
-    //    {
-    //        audioSource1.clip = gamePlayClip;
-    //    }
-    //}
+            }
+        }
+        else
+        {
+            audioSource1.clip = gamePlayClip;
+        }
+    }
 }

@@ -4,18 +4,20 @@ using System.Collections;
 public class PlayerMusic : MonoBehaviour
 {
     public string state;
-    bool playedOnce;
+    bool flapPlayedOnce;
+    bool smashedPlayedOnce;
     //AudioSource3 will take care of Bat's sounds
     public AudioSource audioSource3;
     public AudioClip flyingClip;
     public AudioClip smashingClip;
-    //public AudioClip flappingWingsClip;
+    public AudioClip flappingWingsClip;
 
     // Use this for initialization
     void Start()
     {
-        state = "normal";
-        playedOnce = false;
+        //state = "normal";
+        flapPlayedOnce = false;
+        smashedPlayedOnce = false;
 
     }
 
@@ -30,10 +32,10 @@ public class PlayerMusic : MonoBehaviour
         {
             smashed();
         }
-        //if(state == "flappingWings")
-        //{
-        //    flappingWings();
-        //}
+        if (state == "flappingWings")
+        {
+            flappingWings();
+        }
 
     }
     public void changeState(string stateName)
@@ -62,19 +64,17 @@ public class PlayerMusic : MonoBehaviour
         {
             if (audioSource3.isPlaying)
             {
-                playedOnce = true;
+                smashedPlayedOnce = true;
             }
             else
             {
-                if (!playedOnce)
+                if (!smashedPlayedOnce)
                 {
                     audioSource3.Play();
                 }
                 else
                 {
-                    playedOnce = false;
-                    //changeState("normal");
-
+                    smashedPlayedOnce = false;
                 }
             }
         }
@@ -83,32 +83,34 @@ public class PlayerMusic : MonoBehaviour
             audioSource3.clip = smashingClip;
         }
     }
-    //public void flappingWings()
-    //{
-    //    if (audioSource3.clip == flappingWingsClip)
-    //    {
-    //        if (audioSource3.isPlaying)
-    //        {
-    //            playedOnce = true;
-    //        }
-    //        else
-    //        {
-    //            if (!playedOnce)
-    //            {
-    //                audioSource3.Play();
-    //            }
-    //            else
-    //            {
-    //                playedOnce = false;
-    //                //changeState("normal");
+    public void flappingWings()
+    {
+        Player_Movement pm = GameObject.Find("Player").GetComponent<Player_Movement>();
+        if (audioSource3.clip == flappingWingsClip)
+        {
+            if (audioSource3.isPlaying)
+            {
+                flapPlayedOnce = true;
+            }
+            else
+            {
+                if (!flapPlayedOnce)
+                {
+                    audioSource3.Play();
+                }
+                else
+                {
+                    flapPlayedOnce = false;
+                    pm.flapped = false;
+                    changeState("flying");
 
-    //            }
-    //        }
-    //    }
-    //    else
-    //    {
-    //        audioSource3.clip = flappingWingsClip;
-    //    }
+                }
+            }
+        }
+        else
+        {
+            audioSource3.clip = flappingWingsClip;
+        }
 
-    //}
+    }
 }
