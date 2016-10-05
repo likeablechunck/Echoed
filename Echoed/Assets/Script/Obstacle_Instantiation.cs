@@ -21,7 +21,7 @@ public class Obstacle_Instantiation : MonoBehaviour
         timeElapsed = 0;
 
         //this will be the order of Obstacles that will appear on screen
-        for (int i = 1; i < 34; i++)
+        for (int i = 1; i < 26; i++)
         {
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
@@ -45,22 +45,6 @@ public class Obstacle_Instantiation : MonoBehaviour
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
@@ -100,7 +84,7 @@ public class Obstacle_Instantiation : MonoBehaviour
 
         if(player !=null)
         {
-            if (timeElapsed >= 0 && timeElapsed < 34)
+            if (timeElapsed >= 0 && timeElapsed < 40)
             {
                 if ((timeElapsed - timeElapsedInSecs) > 1.304f)
                 {
@@ -121,8 +105,9 @@ public class Obstacle_Instantiation : MonoBehaviour
                     print("Obstacle that was just instantiated was :" + tempObj);
                 }
             }
-            if (timeElapsed >= 34 && timeElapsed <= 51.14f)
+            if (timeElapsed >= 40 && timeElapsed <= 57.14f)
             {
+                
                 if ((timeElapsed - timeElapsedInSecs) > 1.07f)
                 {
                     //print("Time elapsed is: " + timeElapsed);
@@ -143,7 +128,7 @@ public class Obstacle_Instantiation : MonoBehaviour
                     print("Obstacle that was just instantiated was :" + tempObj);
                 }
             }
-            if (timeElapsed > 51.14f)
+            if (timeElapsed > 57.14f)
             {
                 SceneManager.LoadScene("Main");
             }

@@ -103,7 +103,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
 
         if (player != null)
         {
-            if (timeElapsed >= 0 && timeElapsed < 34)
+            if (timeElapsed >= 0 && timeElapsed < 40)
             {
                 if ((timeElapsed - timeElapsedInSecs) > 7.824f)
                 {
@@ -127,8 +127,10 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
                 }
 
             }
-            if (timeElapsed >= 34 && timeElapsed <= 51.14f)
+            if (timeElapsed >= 40 && timeElapsed <= 57.14f)
             {
+                //print("Time elapsed in secs is :" + timeElapsedInSecs);
+                //timeElapsedInSecs = 30.2f;
                 if ((timeElapsed - timeElapsedInSecs) > 4.28f)
                 {
                     //print("Time elapsed is: " + timeElapsed);
@@ -149,7 +151,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
                     print("signal that was just instantiated was :" + tempObj);
                 }
             }
-            if (timeElapsed > 51.14f)
+            if (timeElapsed > 57.14f)
             {
                 SceneManager.LoadScene("Main");
 

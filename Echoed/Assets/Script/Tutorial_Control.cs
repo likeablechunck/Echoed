@@ -9,12 +9,14 @@ public class Tutorial_Control : MonoBehaviour
     public float tutorialStart;
     public float tutorialMiddle;
     public float tutorialEnd;
+    public bool changedToPartB;
     
 	// Use this for initialization
 	void Start ()
     {
         timeElapsedInSecs = 0;
         timeElapsed = 0;
+        changedToPartB = false;
         StartCoroutine(PlayPartA());
     }
 	
@@ -36,8 +38,13 @@ public class Tutorial_Control : MonoBehaviour
             }
             if( timeElapsed >= tutorialMiddle && timeElapsed <= tutorialEnd)
             {
-                music.changeState("tutorialPartB");
-
+                //music.changeState("tutorialPartB");
+                if (changedToPartB == false)
+                {
+                    music.changeState("tutorialPartB");
+                    changedToPartB = true;
+                }
+                
             }
         }
         else
@@ -56,7 +63,7 @@ public class Tutorial_Control : MonoBehaviour
     IEnumerator PlayPartA()
     {
         Debug.Log("10 second wait is about to start");
-        yield return StartCoroutine(Delay(10.0f));
+        yield return StartCoroutine(Delay(1.0f));
         Debug.Log("10 second wait is over");
         GameMusic music = Camera.main.GetComponent<GameMusic>();
         music.changeState("tutorialPartA");

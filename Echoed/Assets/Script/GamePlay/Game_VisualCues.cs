@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GamePlay_Controller : MonoBehaviour {
+public class Game_VisualCues : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
