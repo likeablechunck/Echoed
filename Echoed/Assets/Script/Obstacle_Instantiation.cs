@@ -130,7 +130,7 @@ public class Obstacle_Instantiation : MonoBehaviour
             }
             if (timeElapsed > 57.14f)
             {
-                SceneManager.LoadScene("Main");
+                SceneManager.LoadScene("Connector");
             }
         }
         else

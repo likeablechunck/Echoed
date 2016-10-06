@@ -153,7 +153,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
             }
             if (timeElapsed > 57.14f)
             {
-                SceneManager.LoadScene("Main");
+                SceneManager.LoadScene("Connector");
 
             }
         }
