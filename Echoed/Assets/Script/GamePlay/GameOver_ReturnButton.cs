@@ -27,7 +27,7 @@ public class GameOver_ReturnButton : MonoBehaviour {
     }
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(.1f);
         SceneManager.LoadScene("Main");
     }
 }

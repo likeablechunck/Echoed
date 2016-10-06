@@ -5,17 +5,20 @@ using UnityEngine.SceneManagement;
 public class Game_Controller : MonoBehaviour
 {
     public bool gamePlayPlayed;
+    float timeElapsed;
 
 	// Use this for initialization
 	void Start ()
     {
         gamePlayPlayed = false;
+        timeElapsed = 0;
 	
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        timeElapsed = timeElapsed + Time.deltaTime;
         GameObject player = GameObject.Find("Player");
         GameMusic music = Camera.main.GetComponent<GameMusic>();
         if (player != null)
@@ -24,7 +27,11 @@ public class Game_Controller : MonoBehaviour
             {
                 music.changeState("gamePlay");
                 gamePlayPlayed = true;
-            }          
+            }   
+            if(timeElapsed >=75)
+            {
+                SceneManager.LoadScene("Win");
+            }       
         }
         else
         {
