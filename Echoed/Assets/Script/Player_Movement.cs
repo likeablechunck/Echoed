@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -63,7 +64,14 @@ public class Player_Movement : MonoBehaviour
             //stop the flying music & switch to Smash music
             transform.Translate(0, 0, 0);
             Destroy(this.gameObject, 0.5f);
-
+        }
+        if(col.gameObject.tag == "End_Trigger")
+        {
+            GameObject endOfTutorial = Instantiate(Resources.Load("Goal_Tutorial", typeof(GameObject))) as GameObject;
+        }
+        if(col.gameObject.tag == "Tutorial_End" )
+        {
+            SceneManager.LoadScene("Main");
         }
     }
 }

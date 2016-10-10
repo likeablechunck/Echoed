@@ -151,11 +151,11 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
             //        print("signal that was just instantiated was :" + tempObj);
             //    }
             //}
-            if (timeElapsed > 84f)
-            {
-                SceneManager.LoadScene("Connector");
+            //if (timeElapsed > 84f)
+            //{
+            //    //SceneManager.LoadScene("Connector");
 
-            }
+            //}
         }
         else
         {

@@ -7,7 +7,7 @@ public class Obstacle_Movement : MonoBehaviour {
     public Vector2 endPosition;
     float Obstaclespeed;
     public float timeStart;
-    public float betweenTwoTutorial;
+    //public float betweenTwoTutorial;
     public float endOfTime;
 
     // Use this for initialization
