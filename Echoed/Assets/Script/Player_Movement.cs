@@ -20,14 +20,14 @@ public class Player_Movement : MonoBehaviour
 	void Update ()
     {
         PlayerMusic PM = Camera.main.GetComponent<PlayerMusic>();
-        print("player's music state is: " + PM.state);
+        //print("player's music state is: " + PM.state);
         if (flapped == false || smashed == false)
         {
             PM.changeState("flying");
         }
         if(flapped)
         {
-            print("I flapped");
+            //print("I flapped");
             PM.changeState("flappingWings");
             
         }

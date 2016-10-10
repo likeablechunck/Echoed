@@ -69,27 +69,27 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
             whatToInstantiateFirst.Add("Signals/Down_Arrow2");
 
         }
-        for (int j = 1; j < 4; j++)
-        {
-            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Down_Arrow2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Up_Arrow2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Up_Arrow2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-            whatToInstantiateSecond.Add("Signals/Down_Arrow2");
-        }
-        //print("array has " + whatToInstantiateFirst.Count + "elements");
-        //print("elements : " + whatToInstantiateFirst);
+        //for (int j = 1; j < 4; j++)
+        //{
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    whatToInstantiateSecond.Add("Signals/Down_Arrow2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    whatToInstantiateSecond.Add("Signals/Up_Arrow2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    whatToInstantiateSecond.Add("Signals/Up_Arrow2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
+        //    whatToInstantiateSecond.Add("Signals/Down_Arrow2");
+        //}
+        ////print("array has " + whatToInstantiateFirst.Count + "elements");
+        ////print("elements : " + whatToInstantiateFirst);
     }
 
 
@@ -127,31 +127,31 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
                 }
 
             }
-            if (timeElapsed >= 40 && timeElapsed <= 57.14f)
-            {
-                //print("Time elapsed in secs is :" + timeElapsedInSecs);
-                //timeElapsedInSecs = 30.2f;
-                if ((timeElapsed - timeElapsedInSecs) > 4.28f)
-                {
-                    //print("Time elapsed is: " + timeElapsed);
-                    string objectToInstantiateSecondName = (string)whatToInstantiateSecond[secondArrayIndex];
-                    Object testObj = Resources.Load(objectToInstantiateSecondName);
-                    if (testObj != null)
-                    {
-                        tempObj = (Instantiate(testObj,
-                            new Vector2(9.4f, -3.2f),
-                            Quaternion.identity)) as GameObject;
-                    }
-                    else
-                    {
-                        print("you wanted me to instantiate an object named " + objectToInstantiateSecondName + " but i did not find it");
-                    }
-                    timeElapsedInSecs += 4.28f;
-                    secondArrayIndex++;
-                    print("signal that was just instantiated was :" + tempObj);
-                }
-            }
-            if (timeElapsed > 57.14f)
+            //if (timeElapsed >= 40 && timeElapsed <= 57.14f)
+            //{
+            //    //print("Time elapsed in secs is :" + timeElapsedInSecs);
+            //    //timeElapsedInSecs = 30.2f;
+            //    if ((timeElapsed - timeElapsedInSecs) > 4.28f)
+            //    {
+            //        //print("Time elapsed is: " + timeElapsed);
+            //        string objectToInstantiateSecondName = (string)whatToInstantiateSecond[secondArrayIndex];
+            //        Object testObj = Resources.Load(objectToInstantiateSecondName);
+            //        if (testObj != null)
+            //        {
+            //            tempObj = (Instantiate(testObj,
+            //                new Vector2(9.4f, -3.2f),
+            //                Quaternion.identity)) as GameObject;
+            //        }
+            //        else
+            //        {
+            //            print("you wanted me to instantiate an object named " + objectToInstantiateSecondName + " but i did not find it");
+            //        }
+            //        timeElapsedInSecs += 4.28f;
+            //        secondArrayIndex++;
+            //        print("signal that was just instantiated was :" + tempObj);
+            //    }
+            //}
+            if (timeElapsed > 84f)
             {
                 SceneManager.LoadScene("Connector");
 

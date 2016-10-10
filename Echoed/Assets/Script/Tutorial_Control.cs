@@ -62,7 +62,7 @@ public class Tutorial_Control : MonoBehaviour
     IEnumerator PlayPartA()
     {
         Debug.Log("10 second wait is about to start");
-        yield return StartCoroutine(Delay(1.0f));
+        yield return StartCoroutine(Delay(10.0f));
         Debug.Log("10 second wait is over");
         GameMusic music = Camera.main.GetComponent<GameMusic>();
         music.changeState("tutorialPartA");

@@ -28,7 +28,7 @@ public class Game_Controller : MonoBehaviour
                 music.changeState("gamePlay");
                 gamePlayPlayed = true;
             }   
-            if(timeElapsed >=79f)
+            if(timeElapsed >=78f)
             {
                 SceneManager.LoadScene("Win");
             }       

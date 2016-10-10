@@ -21,7 +21,7 @@ public class Obstacle_Instantiation : MonoBehaviour
         timeElapsed = 0;
 
         //this will be the order of Obstacles that will appear on screen
-        for (int i = 1; i < 26; i++)
+        for (int i = 1; i < 25; i++)
         {
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
@@ -47,30 +47,43 @@ public class Obstacle_Instantiation : MonoBehaviour
             whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
             whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+            
             whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
         }
-        for (int j = 1; j < 16; j++)
+        for (int j = 1; j < 27; j++)
         {
+            
+           
             whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");      
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");           
             whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
             whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
             whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
             whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
             whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
             whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
             whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+
+
         }
-        //print("array has " + whatToInstantiateFirst.Count + "elements");
-        //print("elements : " + whatToInstantiateFirst);
 
     }
 
@@ -105,10 +118,10 @@ public class Obstacle_Instantiation : MonoBehaviour
                     print("Obstacle that was just instantiated was :" + tempObj);
                 }
             }
-            if (timeElapsed >= 40 && timeElapsed <= 57.14f)
+            if (timeElapsed >= 40 && timeElapsed <= 84f)
             {
                 
-                if ((timeElapsed - timeElapsedInSecs) > 1.07f)
+                if ((timeElapsed - timeElapsedInSecs) >.9f)
                 {
                     //print("Time elapsed is: " + timeElapsed);
                     string objectToInstantiateSecondName = (string)whatToInstantiateSecond[secondArrayIndex];
@@ -123,12 +136,12 @@ public class Obstacle_Instantiation : MonoBehaviour
                     {
                         print("you wanted me to instantiate an object named " + objectToInstantiateSecondName + " but i did not find it");
                     }
-                    timeElapsedInSecs += 1.07f;
+                    timeElapsedInSecs += .9f;
                     secondArrayIndex++;
                     print("Obstacle that was just instantiated was :" + tempObj);
                 }
             }
-            if (timeElapsed > 57.14f)
+            if (timeElapsed > 84f)
             {
                 SceneManager.LoadScene("Connector");
             }
