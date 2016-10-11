@@ -66,10 +66,20 @@ public class Player_Movement : MonoBehaviour
             print("I collided with : " + col.name);
             GameObject endOfTutorial = Instantiate(Resources.Load("Goal_Tutorial", typeof(GameObject))) as GameObject;
         }
-        if(col.gameObject.tag == "Scene_Changer")
+        if(col.gameObject.tag == "Tutorial_End")
         {
             print("I collided with : " + col.name);
             SceneManager.LoadScene("Main");
+        }
+        if (col.gameObject.tag == "End_Game_Trigger")
+        {
+            print("I collided with : " + col.name);
+            GameObject endOfGame = Instantiate(Resources.Load("Goal_Final", typeof(GameObject))) as GameObject;
+        }
+        if (col.gameObject.tag == "Game_End")
+        {
+            print("I collided with : " + col.name);
+            SceneManager.LoadScene("Win");
         }
        
     }

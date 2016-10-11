@@ -17,100 +17,102 @@ public class Game_Obstacle : MonoBehaviour
         timeElapsedInSecs = 0;
         timeElapsed = 0;
 
-        for (int i = 1; i < 80 ; i++)
-        {
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-        }
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/End_Game_Trigger");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
         timeElapsed = timeElapsed + Time.deltaTime;
+        print("Time elapsed: " + timeElapsed);
         GameObject player = GameObject.Find("Player");
 
         if (player != null)
         {
-            if ((timeElapsed - timeElapsedInSecs) > 1.87f)
+            if ((timeElapsed - timeElapsedInSecs) > .85f)
             {
                 string objectToInstantiateName = (string)whatToInstantiateFirst[firstArrayIndex];
                 Object testObj = Resources.Load(objectToInstantiateName);
@@ -124,7 +126,7 @@ public class Game_Obstacle : MonoBehaviour
                 {
                     //print("you wanted me to instantiate an object named " + objectToInstantiateName + " but i did not find it");
                 }
-                timeElapsedInSecs += 1.87f;
+                timeElapsedInSecs += .85f;
                 firstArrayIndex++;
                 print("Obstacle that was just instantiated in GamePlay was :" + tempObj);
             }
