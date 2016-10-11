@@ -79,6 +79,9 @@ public class Obstacle_Instantiation : MonoBehaviour
         whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
         whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
         whatToInstantiateSecond.Add("Obstacles/End_Trigger");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
     }
 
         // Update is called once per frame
@@ -86,7 +89,7 @@ public class Obstacle_Instantiation : MonoBehaviour
         {
 
         timeElapsed = timeElapsed + Time.deltaTime;
-        print("Time elapsed: " + timeElapsed);
+        //print("Time elapsed: " + timeElapsed);
         GameObject player = GameObject.Find("Player");
 
         if(player !=null)

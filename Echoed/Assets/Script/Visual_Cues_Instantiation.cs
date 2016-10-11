@@ -25,48 +25,25 @@ public class Visual_Cues_Instantiation : MonoBehaviour
         //this will be the order of Obstacles that will appear on screen
         //First part of tutorial will only have the visual cues
 
-
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        
         whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        
         whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        
         whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+       
         whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        
         whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        
         whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+       
         whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        
         whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+       
         whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+       
         whatToInstantiateFirst.Add("Signals/Down_Arrow2");
 
     }

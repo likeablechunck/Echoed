@@ -69,7 +69,8 @@ public class Player_Movement : MonoBehaviour
         if(col.gameObject.tag == "Scene_Changer")
         {
             print("I collided with : " + col.name);
-            SceneManager.LoadScene("Start_Menu");
+            SceneManager.LoadScene("Main");
         }
+       
     }
 }
