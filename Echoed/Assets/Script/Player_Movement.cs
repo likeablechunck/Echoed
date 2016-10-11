@@ -32,10 +32,6 @@ public class Player_Movement : MonoBehaviour
             PM.changeState("flappingWings");
             
         }
-        //if(smashed == false)
-        //{
-        //    PM.changeState("flying");
-        //}
         if(smashed)
         {
             PM.changeState("smashed");
@@ -67,11 +63,13 @@ public class Player_Movement : MonoBehaviour
         }
         if(col.gameObject.tag == "End_Trigger")
         {
+            print("I collided with : " + col.name);
             GameObject endOfTutorial = Instantiate(Resources.Load("Goal_Tutorial", typeof(GameObject))) as GameObject;
         }
-        if(col.gameObject.tag == "Tutorial_End" )
+        if(col.gameObject.tag == "Scene_Changer")
         {
-            SceneManager.LoadScene("Main");
+            print("I collided with : " + col.name);
+            SceneManager.LoadScene("Start_Menu");
         }
     }
 }

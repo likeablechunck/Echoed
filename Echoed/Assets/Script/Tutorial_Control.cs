@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Tutorial_Control : MonoBehaviour
 {  
-    public float timeElapsedInSecs;
+   
     public float timeElapsed;
     public float tutorialStart;
     public float tutorialMiddle;
@@ -14,7 +14,7 @@ public class Tutorial_Control : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        timeElapsedInSecs = 0;
+       
         timeElapsed = 0;
         changedToPartB = false;
         StartCoroutine(PlayPartA());
