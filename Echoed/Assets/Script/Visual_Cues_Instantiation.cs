@@ -2,16 +2,16 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class Visual_Cues_Instantiation : MonoBehaviour {
+public class Visual_Cues_Instantiation : MonoBehaviour
+{
 
 
     public ArrayList whatToInstantiateFirst = new ArrayList();
-    public ArrayList whatToInstantiateSecond = new ArrayList();
     public float timeElapsedInSecs;
     GameObject tempObj;
     public float timeElapsed;
     int firstArrayIndex;
-    int secondArrayIndex;
+    
 
     // Use this for initialization
     void Start()
@@ -19,77 +19,56 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
         timeElapsedInSecs = -0.3f;
         timeElapsed = 0;
         firstArrayIndex = 0;
-        secondArrayIndex = 0;
-        //StartCoroutine(Delay(5.608f));
+      
+
 
         //this will be the order of Obstacles that will appear on screen
-        for (int i = 1; i < 10; i++)
-        {
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Down_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Up_Arrow2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
-            whatToInstantiateFirst.Add("Signals/Down_Arrow2");
+        //First part of tutorial will only have the visual cues
 
-        }
-        //for (int j = 1; j < 4; j++)
-        //{
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    whatToInstantiateSecond.Add("Signals/Down_Arrow2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    whatToInstantiateSecond.Add("Signals/Up_Arrow2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    whatToInstantiateSecond.Add("Signals/Up_Arrow2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Ciurcle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    //whatToInstantiateSecond.Add("Signals/Filled_Circle2");
-        //    whatToInstantiateSecond.Add("Signals/Down_Arrow2");
-        //}
-        ////print("array has " + whatToInstantiateFirst.Count + "elements");
-        ////print("elements : " + whatToInstantiateFirst);
+
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Up_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Down_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Up_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Up_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Down_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Down_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Down_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Up_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Up_Arrow2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        //whatToInstantiateFirst.Add("Signals/Filled_Circle2");
+        whatToInstantiateFirst.Add("Signals/Down_Arrow2");
+
     }
 
 
@@ -103,7 +82,7 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
 
         if (player != null)
         {
-            if (timeElapsed >= 0 && timeElapsed < 40)
+            if (timeElapsed >= 0 && timeElapsed < 33.9f)
             {
                 if ((timeElapsed - timeElapsedInSecs) > 7.824f)
                 {
@@ -127,35 +106,6 @@ public class Visual_Cues_Instantiation : MonoBehaviour {
                 }
 
             }
-            //if (timeElapsed >= 40 && timeElapsed <= 57.14f)
-            //{
-            //    //print("Time elapsed in secs is :" + timeElapsedInSecs);
-            //    //timeElapsedInSecs = 30.2f;
-            //    if ((timeElapsed - timeElapsedInSecs) > 4.28f)
-            //    {
-            //        //print("Time elapsed is: " + timeElapsed);
-            //        string objectToInstantiateSecondName = (string)whatToInstantiateSecond[secondArrayIndex];
-            //        Object testObj = Resources.Load(objectToInstantiateSecondName);
-            //        if (testObj != null)
-            //        {
-            //            tempObj = (Instantiate(testObj,
-            //                new Vector2(9.4f, -3.2f),
-            //                Quaternion.identity)) as GameObject;
-            //        }
-            //        else
-            //        {
-            //            print("you wanted me to instantiate an object named " + objectToInstantiateSecondName + " but i did not find it");
-            //        }
-            //        timeElapsedInSecs += 4.28f;
-            //        secondArrayIndex++;
-            //        print("signal that was just instantiated was :" + tempObj);
-            //    }
-            //}
-            //if (timeElapsed > 84f)
-            //{
-            //    //SceneManager.LoadScene("Connector");
-
-            //}
         }
         else
         {

@@ -21,76 +21,77 @@ public class Obstacle_Instantiation : MonoBehaviour
         timeElapsed = 0;
 
         //this will be the order of Obstacles that will appear on screen
-       
-        {
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_None");            
-            whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
-        }
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");      
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");           
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
-            whatToInstantiateSecond.Add("Obstacles/End_Trigger");
+        //First part of tutorial
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        whatToInstantiateFirst.Add("Obstacles/Obstacle_Top");
 
+        //second part of tutorial
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_Top");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_Down");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/Obstacle_None");
+        whatToInstantiateSecond.Add("Obstacles/End_Trigger");
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
+        // Update is called once per frame
+        void Update()
+        {
 
         timeElapsed = timeElapsed + Time.deltaTime;
+        print("Time elapsed: " + timeElapsed);
         GameObject player = GameObject.Find("Player");
 
         if(player !=null)
         {
-            if (timeElapsed >= 0 && timeElapsed < 40)
+            if (timeElapsed >= 0 && timeElapsed < 33.9)
             {
                 if ((timeElapsed - timeElapsedInSecs) > 1.304f)
                 {
@@ -111,10 +112,13 @@ public class Obstacle_Instantiation : MonoBehaviour
                     print("Obstacle that was just instantiated was :" + tempObj);
                 }
             }
-            if (timeElapsed >= 40 && timeElapsed <= 87f)
+
+
+            if (timeElapsed >= 33.9 && timeElapsed <= 60f)
+
             {
-                
-                if ((timeElapsed - timeElapsedInSecs) >.9f)
+
+                if ((timeElapsed - timeElapsedInSecs) > .9f)
                 {
                     //print("Time elapsed is: " + timeElapsed);
                     string objectToInstantiateSecondName = (string)whatToInstantiateSecond[secondArrayIndex];
@@ -134,10 +138,12 @@ public class Obstacle_Instantiation : MonoBehaviour
                     print("Obstacle that was just instantiated was :" + tempObj);
                 }
             }
-            if (timeElapsed > 87f)
-            {
-                SceneManager.LoadScene("Connector");
-            }
+
+
+            //if (timeElapsed > 60f)
+            //{
+            //    SceneManager.LoadScene("Connector");
+            //}
         }
         else
         {
