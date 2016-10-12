@@ -44,6 +44,11 @@ public class Tutorial_Control : MonoBehaviour
                 }
                 
             }
+            if (timeElapsed >= 70)
+            {
+
+                music.stopPlaying = true;
+            }
         }
         else
         {
@@ -51,12 +56,6 @@ public class Tutorial_Control : MonoBehaviour
             //go back to the beggining of the tutorial & play the crashing
             SceneManager.LoadScene("Loose_Tutorial");
         }
-        if (timeElapsed >= 70)
-        {
-            GameMusic music = Camera.main.GetComponent<GameMusic>();
-            music.audioSource1.Stop();
-        }
-
     }
     public void MusicChanger()
     {
