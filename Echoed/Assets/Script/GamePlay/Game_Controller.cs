@@ -21,11 +21,16 @@ public class Game_Controller : MonoBehaviour
 	void Update ()
     {
         timeElapsed = timeElapsed + Time.deltaTime;
+        print("Time elapsed: " + timeElapsed);
         GameObject player = GameObject.Find("Player");
         GameMusic music = Camera.main.GetComponent<GameMusic>();
         if (player == null)
         {
             SceneManager.LoadScene("GameOver");
+        }
+        if(timeElapsed > 85.5f)
+        {
+            music.stopPlaying = true;
         }
         
     }
