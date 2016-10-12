@@ -98,8 +98,8 @@ public class Game_Obstacle : MonoBehaviour
         whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
         whatToInstantiateFirst.Add("Obstacles/Obstacle_Down");
         whatToInstantiateFirst.Add("Obstacles/End_Game_Trigger");
-        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
-        whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        //whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
+        //whatToInstantiateFirst.Add("Obstacles/Obstacle_None");
 
     }
 	
@@ -112,7 +112,7 @@ public class Game_Obstacle : MonoBehaviour
 
         if (player != null)
         {
-            if ((timeElapsed - timeElapsedInSecs) > .85f)
+            if ((timeElapsed - timeElapsedInSecs) > .91f)
             {
                 string objectToInstantiateName = (string)whatToInstantiateFirst[firstArrayIndex];
                 Object testObj = Resources.Load(objectToInstantiateName);
@@ -126,7 +126,7 @@ public class Game_Obstacle : MonoBehaviour
                 {
                     //print("you wanted me to instantiate an object named " + objectToInstantiateName + " but i did not find it");
                 }
-                timeElapsedInSecs += .85f;
+                timeElapsedInSecs += .91f;
                 firstArrayIndex++;
                 print("Obstacle that was just instantiated in GamePlay was :" + tempObj);
             }

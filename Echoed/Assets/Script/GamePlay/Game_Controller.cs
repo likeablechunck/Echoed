@@ -12,7 +12,7 @@ public class Game_Controller : MonoBehaviour
     {
         gamePlayPlayed = false;
         timeElapsed = 0;
-        StartCoroutine(GamePlay());
+        StartCoroutine(GamePlayMusic());
         StartCoroutine(fading());
 
     }
@@ -23,30 +23,14 @@ public class Game_Controller : MonoBehaviour
         timeElapsed = timeElapsed + Time.deltaTime;
         GameObject player = GameObject.Find("Player");
         GameMusic music = Camera.main.GetComponent<GameMusic>();
-        if (player != null)
-        {
-            //if(gamePlayPlayed == false)
-            //{
-            //    music.changeState("gamePlay");
-            //    gamePlayPlayed = true;
-            //}   
-            //if(timeElapsed >=78f)
-            //{
-            //    SceneManager.LoadScene("Win");
-            //}       
-        }
-        else
+        if (player == null)
         {
             SceneManager.LoadScene("GameOver");
         }
+        
     }
-    public void MusicChanger()
-    {
-        GameMusic music = Camera.main.GetComponent<GameMusic>();
-        music.changeState("tutorialPartA");
-
-    }
-    IEnumerator GamePlay()
+   
+    IEnumerator GamePlayMusic()
     {
         Debug.Log("10 second wait is about to start");
         yield return StartCoroutine(Delay(10.0f));
