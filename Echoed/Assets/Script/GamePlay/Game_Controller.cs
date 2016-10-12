@@ -13,6 +13,7 @@ public class Game_Controller : MonoBehaviour
         gamePlayPlayed = false;
         timeElapsed = 0;
         StartCoroutine(GamePlay());
+        StartCoroutine(fading());
 
     }
 	
@@ -57,5 +58,11 @@ public class Game_Controller : MonoBehaviour
     IEnumerator Delay(float seconds)
     {
         yield return new WaitForSeconds(seconds);
+    }
+    IEnumerator fading()
+    {
+        float fadeTime = Camera.main.GetComponent<Fading>().BeginFade(-1);
+        yield return new WaitForSeconds(fadeTime);
+
     }
 }

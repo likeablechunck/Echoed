@@ -49,6 +49,12 @@ public class Player_Movement : MonoBehaviour
            
         }
 	}
+    IEnumerator changeScene(string sceneName)
+    {
+        float fadeTime = Camera.main.GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        SceneManager.LoadScene(sceneName);
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -66,10 +72,11 @@ public class Player_Movement : MonoBehaviour
             print("I collided with : " + col.name);
             GameObject endOfTutorial = Instantiate(Resources.Load("Goal_Tutorial", typeof(GameObject))) as GameObject;
         }
-        if(col.gameObject.tag == "Tutorial_End")
+        if (col.gameObject.tag == "Tutorial_End")
         {
             print("I collided with : " + col.name);
-            SceneManager.LoadScene("Main");
+            StartCoroutine(changeScene("Main"));
+            //SceneManager.LoadScene("Main");
         }
         if (col.gameObject.tag == "End_Game_Trigger")
         {
@@ -79,8 +86,9 @@ public class Player_Movement : MonoBehaviour
         if (col.gameObject.tag == "Game_End")
         {
             print("I collided with : " + col.name);
-            SceneManager.LoadScene("Win");
+            StartCoroutine(changeScene("Win"));
+            //SceneManager.LoadScene("Win");
         }
-       
+
     }
 }
