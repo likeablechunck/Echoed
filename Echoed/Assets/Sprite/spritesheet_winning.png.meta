@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: fa8c76257cd978749b8e860533e20c76
-timeCreated: 1476253062
+timeCreated: 1476322886
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -69,10 +69,10 @@ TextureImporter:
       name: spritesheet_winning_0
       rect:
         serializedVersion: 2
-        x: 125
-        y: 1087
-        width: 235
-        height: 258
+        x: 0
+        y: 1084
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -82,10 +82,10 @@ TextureImporter:
       name: spritesheet_winning_1
       rect:
         serializedVersion: 2
-        x: 693
-        y: 1085
-        width: 278
-        height: 262
+        x: 596
+        y: 1084
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -95,10 +95,10 @@ TextureImporter:
       name: spritesheet_winning_2
       rect:
         serializedVersion: 2
-        x: 1239
-        y: 1082
-        width: 360
-        height: 241
+        x: 1192
+        y: 1084
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,10 +108,10 @@ TextureImporter:
       name: spritesheet_winning_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 816
-        width: 456
-        height: 226
+        x: 0
+        y: 813
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,9 +122,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 596
-        y: 814
-        width: 530
-        height: 206
+        y: 813
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: spritesheet_winning_5
       rect:
         serializedVersion: 2
-        x: 1231
-        y: 820
-        width: 555
-        height: 180
+        x: 1192
+        y: 813
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: spritesheet_winning_6
       rect:
         serializedVersion: 2
-        x: 177
-        y: 556
-        width: 399
-        height: 175
+        x: 0
+        y: 542
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: spritesheet_winning_7
       rect:
         serializedVersion: 2
-        x: 842
-        y: 563
-        width: 330
-        height: 175
+        x: 596
+        y: 542
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: spritesheet_winning_8
       rect:
         serializedVersion: 2
-        x: 1434
-        y: 565
-        width: 222
-        height: 199
+        x: 1192
+        y: 542
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,10 +186,10 @@ TextureImporter:
       name: spritesheet_winning_9
       rect:
         serializedVersion: 2
-        x: 235
-        y: 290
-        width: 228
-        height: 217
+        x: 0
+        y: 271
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: spritesheet_winning_10
       rect:
         serializedVersion: 2
-        x: 824
-        y: 282
-        width: 235
-        height: 225
+        x: 596
+        y: 271
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,23 +212,23 @@ TextureImporter:
       name: spritesheet_winning_11
       rect:
         serializedVersion: 2
-        x: 1401
-        y: 292
-        width: 253
-        height: 231
+        x: 1192
+        y: 271
+        width: 596
+        height: 271
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 48, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: spritesheet_winning_12
       rect:
         serializedVersion: 2
-        x: 147
-        y: 21
-        width: 315
-        height: 251
+        x: 0
+        y: 0
+        width: 596
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
