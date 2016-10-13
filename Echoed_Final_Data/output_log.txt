@@ -2,9 +2,9 @@ Mono path[0] = 'Z:/Git_Work/Echoed/Echoed_Final_Data/Managed'
 Mono path[1] = 'Z:/Git_Work/Echoed/Echoed_Final_Data/Mono'
 Mono config path = 'Z:/Git_Work/Echoed/Echoed_Final_Data/Mono/etc'
 PlayerConnection initialized from Z:/Git_Work/Echoed/Echoed_Final_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55413
-Multi-casting "[IP] 10.10.14.56 [Port] 55413 [Flags] 2 [Guid] 565882544 [EditorId] 3791752475 [Version] 1048832 [Id] WindowsPlayer(180-804-19) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [10.10.14.56:55413]
+PlayerConnection initialized network socket : 0.0.0.0 55075
+Multi-casting "[IP] 10.10.14.56 [Port] 55075 [Flags] 2 [Guid] 1194431695 [EditorId] 3791752475 [Version] 1048832 [Id] WindowsPlayer(180-804-19) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [10.10.14.56:55075]
 Initialize engine version: 5.4.0f3 (a6d8d714de6f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -31,7 +31,7 @@ Platform assembly: Z:\Git_Work\Echoed\Echoed_Final_Data\Managed\UnityEngine.Netw
 Loading Z:\Git_Work\Echoed\Echoed_Final_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: Z:\Git_Work\Echoed\Echoed_Final_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading Z:\Git_Work\Echoed\Echoed_Final_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  1.901 seconds
+- Completed reload, in  1.411 seconds
 Platform assembly: Z:\Git_Work\Echoed\Echoed_Final_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: Z:\Git_Work\Echoed\Echoed_Final_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on Fading
@@ -44,11 +44,11 @@ desktop: 1920x1080 60Hz; virtual: 3360x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.358330 ms
+UnloadTime: 1.474809 ms
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 23f0 -> priority: 1 
-  Thread -> id: 2644 -> priority: 1 
-  Thread -> id: 2724 -> priority: 1 
+  Thread -> id: 1eac -> priority: 1 
+  Thread -> id: 1b14 -> priority: 1 
+  Thread -> id: 22dc -> priority: 1 
 current Music state is :clicked
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
@@ -74,12 +74,12 @@ UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Exte
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.662933 ms
+UnloadTime: 4.548939 ms
 System memory in use before: 61.9 MB.
 System memory in use after: 61.9 MB.
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 396.
-Total: 0.233672 ms (FindLiveObjects: 0.011939 ms CreateObjectMapping: 0.017056 ms MarkObjects: 0.132755 ms  DeleteObjects: 0.071352 ms)
+Total: 0.240210 ms (FindLiveObjects: 0.011086 ms CreateObjectMapping: 0.015635 ms MarkObjects: 0.130197 ms  DeleteObjects: 0.082723 ms)
 
 10 second wait is about to start
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
@@ -94,7 +94,7 @@ Tutorial_Control:Start() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Co
  
 (Filename: Z:/Git_Work/Echoed/Echoed/Assets/Script/Tutorial_Control.cs Line: 74)
 
-Time elapsed is 0.0007396788
+Time elapsed is 0.0009565793
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -104,7 +104,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 0.001479358
+Time elapsed is 0.001913159
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -114,7 +114,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 0.02147936
+Time elapsed is 0.02191316
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -124,7 +124,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 0.2183877
+Time elapsed is 0.2315476
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -134,7 +134,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 0.4184108
+Time elapsed is 0.4677001
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -144,7 +144,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 0.612317
+Time elapsed is 0.6761469
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -154,7 +154,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 0.7997843
+Time elapsed is 0.8808045
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -164,7 +164,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 0.9867769
+Time elapsed is 1.081555
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -174,7 +174,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 1.188663
+Time elapsed is 1.282838
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -184,77 +184,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 1.37891
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Obstacle that was just instantiated was :Obstacle_None(Clone) (UnityEngine.GameObject)
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obstacle_Instantiation.cs:115)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 1.712243
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 1.904034
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 2.106504
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 2.295421
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 2.484779
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 2.673177
+Time elapsed is 1.499226
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -274,7 +204,7 @@ Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obst
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 3.00651
+Time elapsed is 1.832559
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -284,7 +214,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 3.186796
+Time elapsed is 2.055544
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -294,7 +224,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 3.368314
+Time elapsed is 2.288178
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -304,7 +234,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 3.55678
+Time elapsed is 2.497042
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -314,17 +244,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 3.746672
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 3.948548
+Time elapsed is 2.701118
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -344,7 +264,7 @@ Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obst
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 4.281882
+Time elapsed is 3.034451
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -354,7 +274,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 4.468896
+Time elapsed is 3.251843
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -364,7 +284,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 4.658315
+Time elapsed is 3.477382
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -374,7 +294,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 4.859122
+Time elapsed is 3.687426
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -384,7 +304,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 5.049741
+Time elapsed is 3.900515
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -394,77 +314,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 5.241682
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Obstacle that was just instantiated was :Obstacle_None(Clone) (UnityEngine.GameObject)
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obstacle_Instantiation.cs:115)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 5.575015
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 5.767273
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 5.96936
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 6.158187
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 6.349106
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 6.533826
+Time elapsed is 4.118888
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -484,7 +334,7 @@ Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obst
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 6.867159
+Time elapsed is 4.452221
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -494,7 +344,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 7.1027
+Time elapsed is 4.664489
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -504,7 +354,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 7.28867
+Time elapsed is 4.877336
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -514,7 +364,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 7.471111
+Time elapsed is 5.106666
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -524,97 +374,7 @@ Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_C
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 7.65456
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-signal that was just instantiated was :Up_Arrow2(Clone) (UnityEngine.GameObject)
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Visual_Cues_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Visual_Cues_Instantiation.cs:82)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 7.987894
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Obstacle that was just instantiated was :Obstacle_Down(Clone) (UnityEngine.GameObject)
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obstacle_Instantiation.cs:115)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 8.321227
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 8.507861
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 8.704056
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 8.891092
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 9.079515
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 9.26816
+Time elapsed is 5.321941
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -634,169 +394,7 @@ Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obst
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
 
-Time elapsed is 9.601493
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 9.781987
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 9.999369
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 10.18993
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-10 second wait is over
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-<PlayPartA>c__IteratorE:MoveNext() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:76)
-UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
- 
-(Filename: Z:/Git_Work/Echoed/Echoed/Assets/Script/Tutorial_Control.cs Line: 76)
-
-current Music state is :tutorialPartA
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-GameMusic:changeState(String) (at Z:\Git_Work\Echoed\Echoed\Assets\Script\GameMusic.cs:43)
-<PlayPartA>c__IteratorE:MoveNext() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:78)
-UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 10.52326
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Obstacle that was just instantiated was :Obstacle_None(Clone) (UnityEngine.GameObject)
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obstacle_Instantiation.cs:115)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 10.85659
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 11.04636
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 11.23885
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 11.42147
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 11.6035
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 11.78673
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Obstacle that was just instantiated was :Obstacle_None(Clone) (UnityEngine.GameObject)
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Obstacle_Instantiation:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Obstacle_Instantiation.cs:115)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 12.12006
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
-Tutorial_Control:Update() (at Z:\Git_Work\Echoed\Echoed\Assets\Script\Tutorial_Control.cs:29)
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
-
-Time elapsed is 12.33343
+Time elapsed is 5.655274
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
